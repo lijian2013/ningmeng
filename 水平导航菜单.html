@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平菜单</title>
+    <style>
+    #list .item{
+        list-style: none;
+
+    }
+        #list .sum{
+            list-style: none;
+        }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+        #list .item{
+            width: 100px;
+            height: 30px;
+            background: #ff0000;
+            text-align: center;
+            line-height: 30px;
+            float: left;
+            margin-right: 3px;
+
+        }
+        #list .item > a{
+            color: #00ff00;
+            text-decoration:none;
+            width: 100px;
+            height: 30px;
+            display: block;
+        }
+            #list .sum{
+                display: none;
+            }
+            #list .sum >li{
+                background: #444444;
+                cursor: pointer;
+            }
+            #list .item:hover.sum{
+                display: block;
+            }
+            #list .item:hover{
+                background: #555555;
+            }
+            #list .sum  a{
+                color: #0000ff;
+                background: #aaaaaa;
+                display:block;
+            }
+            #list{
+                width: 450px;
+                height: 30px;
+            }
+    </style>
+</head>
+<body>
+<ul id="list">
+    <li class="item">
+        <a href="">菜单1</a>
+    </li>
+    <li class="item">
+        <a href="">菜单2</a>
+    </li>
+    <li class="item">
+        <a href="">菜单3</a>
+        <ul class="sum">
+            <li><a href="">导航1</a></li>
+            <li><a href="">导航2</a></li>
+            <li><a href="">导航3</a></li>
+        </ul>
+    </li>
+    <li class="item">
+        <a href="">菜单4</a>
+    </li>
+</ul>
+</body>
+</html>
