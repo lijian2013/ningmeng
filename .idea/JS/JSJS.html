@@ -47,6 +47,26 @@
     #btn-box .active{
         background: #ff0036;
     }
+    #prev,#next{
+        width: 20px;
+        height: 20px;
+        background:rgba(0, 0, 0, .3);
+        position: absolute;
+        bottom: 5px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #prev{
+        left: 5px;
+
+    }
+    #next{
+        left: 20px;
+    }
+
     </style>
 </head>
 <body>
@@ -65,6 +85,8 @@
             <li>4</li>
             <li>5</li>
         </ul>
+        <span id="prev">&lt;</span>
+        <span id="next">&gt;</span>
     </div>
 </body>
 </html>
